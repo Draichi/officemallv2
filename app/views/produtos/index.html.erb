@@ -1,25 +1,21 @@
-<html>
-  <body>
-    <%= nav_bar brand: "Office Mall", brand_link: root_url %>
-    <table class="table table-bordered">
-      <thead>
-          <tr>
-            <th>Nome</th>
-            <th>Descrição</th>
-            <th>Preço</th>
-            <th>Quantidade</th>            
-          </tr>
-      </thead>
-      <tbody>
-        <% @produtos_por_preco.each do |produto| %>
-          <tr>
-            <td><%= produto.nome %></td>
-            <td><%= produto.descricao %></td>
-            <td><%= produto.quantidade %></td>
-            <td><%= produto.preco %></td>
-          </tr>
-        <% end %>
-        </tbody>
-    </table>  
-  </body>
-</html>
+<table class="table table-bordered">
+  <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Descrição</th>
+        <th>Quantidade</th>
+        <th>Preço</th>            
+      </tr>
+  </thead>
+  <tbody>
+    <% @produtos_por_preco.each do |produto| %>
+      <tr>
+        <td><%= produto.nome %></td>
+        <td><%= produto.descricao %></td>
+        <td><%= produto.quantidade %></td>
+        <td><%= produto.preco %></td>
+      </tr>
+    <% end %>
+    </tbody>
+</table>  
+   
