@@ -4,7 +4,8 @@
         <th>Nome</th>
         <th>Descrição</th>
         <th>Quantidade</th>
-        <th>Preço</th>            
+        <th>Preço</th> 
+        <th></th>           
       </tr>
   </thead>
   <tbody>
@@ -14,8 +15,11 @@
         <td><%= produto.descricao %></td>
         <td><%= produto.quantidade %></td>
         <td><%= produto.preco %></td>
+        <td><%= button_to "Remover", produto, method: :delete, class: "btn btn-danger", data: { confirm: "Remover permanentemente '#{produto.nome}' ?" } %></td>
       </tr>
     <% end %>
     </tbody>
 </table>  
+<%= link_to "Adicionar produto", new_produto_path %>
+
    

@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   root "produtos#index"
-  get "produtos/new" => "produtos#new"
-  post "/produtos" => "produtos#create"
+  resources :produtos
+  #rake routes no terminal. resoureces vai dar todos os paths para destroy, new, etc
 end
