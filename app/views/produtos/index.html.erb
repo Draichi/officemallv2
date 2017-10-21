@@ -18,7 +18,7 @@
         <td><%= button_to "Remover", produto, method: :delete, class: "btn btn-danger", data: { confirm: "Remover permanentemente '#{produto.nome}' ?" } %></td>
       </tr>
     <% end %>
-    </tbody>
+  </tbody>
 </table>  
 <%= link_to "Adicionar produto", new_produto_path %>
 

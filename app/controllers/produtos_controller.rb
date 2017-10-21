@@ -19,4 +19,9 @@ class ProdutosController < ApplicationController
     Produto.destroy id
     redirect_to root_url
   end
+
+  def busca
+    @nome_buscado = params[:nome]
+    @produtos = Produto.where "nome like ?", "%#{@nome_buscado}%"
+  end
 end
