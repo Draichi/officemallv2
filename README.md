@@ -1,25 +1,10 @@
-# README
+# Office Mall
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> Run following commands:
 
-Things you may want to cover:
+```bash
+bundle install
 
-* Ruby version
+rails s
+```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# officemallv2
